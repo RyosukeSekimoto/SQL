@@ -3,5 +3,7 @@ SELECT
 FROM
     item INNER JOIN item_category
     ON item_category.category_id = item.category_id
-GROUP BY item.category_id
-ORDER BY total_price DESC;
+GROUP BY
+    item.category_id
+ORDER BY
+    total_price DESC;
